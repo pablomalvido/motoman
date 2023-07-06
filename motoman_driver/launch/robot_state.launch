@@ -11,7 +11,7 @@
 	<!-- put them on the parameter server -->
 	<param name="robot_ip_address" type="str" value="$(arg robot_ip)" />
 
-	<!-- load the correct version of the robot state node -->
+	<!-- load the correct version of the robot state node (state_interface) -->
 	<node if="$(arg use_bswap)" name="joint_state" 
 		pkg="motoman_driver" type="robot_state_bswap" />
 	<node unless="$(arg use_bswap)" name="joint_state" 

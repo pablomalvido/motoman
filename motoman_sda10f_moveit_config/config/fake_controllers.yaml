@@ -53,3 +53,8 @@ controller_list:
       - arm_right_joint_5_r
       - arm_right_joint_6_b
       - arm_right_joint_7_t
+initial:  # Define initial robot poses.
+  - group: torso
+    pose: torso_combs
+  - group: arms
+    pose: arms_platform_3_corrected

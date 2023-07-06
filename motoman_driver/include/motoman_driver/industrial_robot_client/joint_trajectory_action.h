@@ -132,6 +132,12 @@ private:
   std::map<int, bool> has_active_goal_map_;
 
   /**
+   * \brief Indicates which groups are active on `multi-group` action goals, 
+   * Note: independant of `has_active_goal_map_` which handles single group goals.
+   */
+  std::map<int, bool> multi_group_active_goals_map_;  
+
+  /**
    * \brief Cache of the current active goal
    */
   JointTractoryActionServer::GoalHandle active_goal_;
